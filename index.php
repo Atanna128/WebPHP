@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- Default form register -->
-<form class="text-center border border-light p-5" method="post" action="/lab2/server_sample.php">
+<form class="text-center border border-light p-5" method="post" action="/lab/server_sample.php">
 
     <p class="h4 mb-4">Sign up</p>
 

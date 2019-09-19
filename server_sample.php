@@ -6,7 +6,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'lab2');
+$db = mysqli_connect('localhost', 'root', '', 'lab');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -37,8 +37,12 @@ if (isset($_POST['reg_user'])) {
     }
   }else{
     // Finally, register user if there are no errors in the form
-    echo $query = "INSERT INTO `Userdata`(`firstname`, `lastname`,`email`,`phonenumber`,`password`,`gender`,`hobbies`) VALUES ('$firstname', '$lastname','$email','$phonenumber','$password','$gender','$hobbies')";
+    $query = "INSERT INTO `Userdata`(`firstname`, `lastname`,`email`,`phonenumber`,`password`,`gender`,`hobbies`) VALUES ('$firstname', '$lastname','$email','$phonenumber','$password','$gender','$hobbies')";
     mysqli_query($db, $query);
   }
-	// header('location: test.php');
+  // header('location: test.php');
+  
+  // print all database here
+  
+
 }
