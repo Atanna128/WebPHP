@@ -41,14 +41,7 @@ if (isset($_POST['reg_user'])) {
     $query = "INSERT INTO `Userdata`(`firstname`, `lastname`,`email`,`phonenumber`,`password`,`gender`,`hobbies`) VALUES ('$firstname', '$lastname','$email','$phonenumber','$password','$gender','$hobbies')";
     mysqli_query($db, $query);
   }
-  // header('location: test.php');
+  header('location: printdatabase.php');
   
-  // print all database here
-  // $printdb = "SELECT * FROM Userdata";
-  // $printresult = $db->query($printdb);
-  // while($row = mysqli_fetch_row($printresult)) {
-  //   printf ("%30s      (%10s) ",$row[0],$row[1]);
-  //   echo("<br>");
-  // }
 
 }
