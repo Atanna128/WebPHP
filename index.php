@@ -30,15 +30,9 @@
     <input type="text" id="phonenumber" name="phonenumber" class="form-control mb-4" placeholder="Phonenumber">
 
     Gender:
-    <input type="radio" name="gender"
-    <?php if (isset($gender) && $gender=="female") echo "checked";?>
-    value="female">Female
-    <input type="radio" name="gender"
-    <?php if (isset($gender) && $gender=="male") echo "checked";?>
-    value="male">Male
-    <input type="radio" name="gender"
-    <?php if (isset($gender) && $gender=="other") echo "checked";?>
-    value="other">Other
+    <input type="radio" name="gender"value="female">Female
+    <input type="radio" name="gender"value="male">Male
+    <input type="radio" name="gender"value="other">Other
     
     <!-- a checkbox named "hobbies", values: Reading, Sport, Music, ... -->
     <br>
@@ -47,8 +41,9 @@
     
     <input type="checkbox" name="hobbies[]" value="Reading">Reading
     <input type="checkbox" name="hobbies[]" value="Sleeping">Sleeping
-    <input type="checkbox" name="hobbies[]" value="Wibu">Wibu
-    <input type="checkbox" name="hobbies[]" value="NEET">NEET
+    <input type="checkbox" name="hobbies[]" value="Travelling">Travelling
+    <input type="checkbox" name="hobbies[]" value="Learning">Learning
+    <input type="checkbox" name="hobbies[]" value="Sport">Sport
     
 
     <!-- Sign up button -->

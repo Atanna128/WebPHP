@@ -3,6 +3,7 @@
 // initializing variables
 $username = "";
 $email    = "";
+$hobbies  = "";
 $errors = array(); 
 
 // connect to the database
@@ -32,7 +33,7 @@ if (isset($_POST['reg_user'])) {
   if ($user) { // if user exists
     if ($user['email'] === $email) {
       // array_push($errors, "email already exists");
-      echo ("duplicated email");
+      // block
       
     }
   }else{
@@ -43,6 +44,11 @@ if (isset($_POST['reg_user'])) {
   // header('location: test.php');
   
   // print all database here
-  
+  // $printdb = "SELECT * FROM Userdata";
+  // $printresult = $db->query($printdb);
+  // while($row = mysqli_fetch_row($printresult)) {
+  //   printf ("%30s      (%10s) ",$row[0],$row[1]);
+  //   echo("<br>");
+  // }
 
 }
